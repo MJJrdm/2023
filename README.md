@@ -30,6 +30,7 @@
 
 ## 前端源码说明
 
+```
 |-- public
 |   |-- favicon.ico                  // 图标
 |   |-- index.html                   // 入口html文件
@@ -62,6 +63,7 @@
         |-- RankingList.vue
         |-- RegisteredAccount.vue
         |-- ResetPassword.vue
+```
 
 ## 前端相关命令
 
@@ -85,28 +87,30 @@
 
 ## 后端源码说明
 
-|-- manage.py                            // 项目管理的主程序,用于管理整个项目的开发运行
-|-- a_puzzle_a_day                //主文件夹
+```
+|-- manage.py                             // 项目管理的主程序,用于管理整个项目的开发运行
+|-- a_puzzle_a_day                        //主文件夹
     |--__init__.py                      
-    |--asgj.py                           // 存储asgi设定的文件
-    |--drf_defaults.py                   // 配置页码管理
-    |--settings.py                       // Django项目的配置文件, 此配置文件中的一些全局变量将为Django框架的运行传递一些参数
-    |--urls.py              			 // url文件，定义了映射url到视图的列表Urlpatterns
-    |--wsgi.py                        // 存储wsgi设定的文件 
+    |--asgj.py                            // 存储asgi设定的文件
+    |--drf_defaults.py                    // 配置页码管理
+    |--settings.py                        // Django项目的配置文件
+    |--urls.py              		      // url文件，定义了映射url到视图的列表Urlpatterns
+    |--wsgi.py                            // 存储wsgi设定的文件 
 |-- games                  
     |--__init__.py                      
-    |--admin.py                              // 可以将models文件中的类注册到Django框架自带的admin site网站中,进行crud
-    |--apps.py                               // 存放当前app的一些配置
-    |--games_service.py               // 游戏运行中的函数
-    |--games_crud_service.py       // game model的增删改查
-    |--models.py                             // 定义数据的模型和数据库结构
-	|--serializers.py              		// model的序列化组件
-    |--tests.py							    // service对应的测试
-	|--user_crud_service.py         // user模型的增删改查
-    |--views.py								// 接口文件
+    |--admin.py                           // 可以将models文件中的类注册到Django框架自带的admin site网站中,进行crud
+    |--apps.py                            // 存放当前app的一些配置
+    |--games_service.py                   // 游戏运行中的函数
+    |--games_crud_service.py              // game model的增删改查
+    |--models.py                          // 定义数据的模型和数据库结构
+	|--serializers.py              		  // model的序列化组件
+    |--tests.py							  // service对应的测试
+	|--user_crud_service.py               // user模型的增删改查
+    |--views.py							  // 接口文件
 |-- pages                  
-    |--dist                     			// 打包后的前端页面
-|--static    							   //静态文件
+    |--dist                     		  // 打包后的前端页面
+|--static    							  //静态文件
+```
 
 ## 本地运行说明
 
