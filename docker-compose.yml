@@ -1,0 +1,15 @@
+version: "3"
+services:
+
+  django:
+    restart: always
+    build: .
+    environment:
+      - ENVIRONMENT=docker
+      - DEBUG=0
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - /opt/a_puzzle_a_day/logs:/code/logs
+    ports:
+      - "8006:8000"
+      
